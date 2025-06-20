@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Damage Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vehicle Damage Detection</h1>
+            <p>Upload vehicle images to detect damages like scratches, rust, or breakage.</p>
+        </header>
+        <main>
+            <section class="upload-section">
+                <label for="image-upload" class="upload-label">Select Images</label>
+                <input type="file" id="image-upload" accept="image/*" multiple />
+            </section>
+            <section id="preview-section" class="preview-section">
+                <!-- Image previews will appear here -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Vehicle Scan. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

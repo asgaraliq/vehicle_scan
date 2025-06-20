@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px 16px 24px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #2a3a5e;
+}
+
+header p {
+    color: #5a6a85;
+    font-size: 1.1rem;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.upload-label {
+    background: #2a3a5e;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+
+.upload-label:hover {
+    background: #1d2842;
+}
+
+#image-upload {
+    display: none;
+}
+
+.preview-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.preview-card {
+    background: #f9fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    position: relative;
+    flex: 1 1 260px;
+    max-width: 260px;
+}
+
+.preview-canvas {
+    border-radius: 8px;
+    max-width: 220px;
+    max-height: 180px;
+    margin-bottom: 12px;
+    background: #e9ecf3;
+}
+
+.result-label {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: 4px;
+    color: #e74c3c;
+}
+
+.result-label.no-damage {
+    color: #27ae60;
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+    color: #8a99b3;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+    .preview-section {
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px 4px 8px 4px;
+    }
+    .preview-section {
+        max-width: 98vw;
+    }
+    .preview-card {
+        width: 98vw;
+        max-width: 98vw;
+    }
+    .preview-canvas {
+        max-width: 90vw;
+    }
+} 
