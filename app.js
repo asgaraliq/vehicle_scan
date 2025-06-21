@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Send to backend for detection
                 const formData = new FormData();
                 formData.append('image', file);
-                fetch('https://vehicle-scan.vercel.app/detect', {
+                fetch('http://127.0.0.1:5000/detect', {
                     method: 'POST',
                     body: formData
                 })
