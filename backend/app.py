@@ -25,7 +25,7 @@ def detect_damage():
     img_np = np.array(img)
 
     # Run YOLO inference
-    results = model(img_np)
+    results = model(np.array(img))
     boxes = []
     damage_found = False
     for r in results:
